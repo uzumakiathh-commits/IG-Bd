@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#28221f">
+  <title>Happy Birthday, Ingyin 🍂</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="bgMusic" loop preload="auto">
+    <source src="music.wav" type="audio/wav">
+  </audio>
+
+  <section class="opening" id="opening">
+    <div class="moon"></div>
+    <div class="opening-card">
+      <p class="eyebrow">A LITTLE BIRTHDAY SURPRISE</p>
+      <h1>Hey, Ingyin <span>✦</span></h1>
+      <p class="intro">A little something to make your day brighter.</p>
+      <button id="enterBtn" class="primary-button">♫ &nbsp; Tap to open</button>
+      <p class="tiny-note">Put on your headphones and enjoy ♡</p>
+    </div>
+    <div class="falling-leaves" aria-hidden="true"></div>
+  </section>
+
+  <main id="birthday" class="birthday hidden">
+    <div class="ambient-glow"></div>
+    <div class="moon moon-main"></div>
+
+    <section class="hero">
+      <p class="eyebrow">OCTOBER 19 · A DAY TO CELEBRATE</p>
+      <h2 class="japanese">생일 축하해 ♡</h2>
+      <h1>Happy Birthday,<br><span>Ingyin!</span></h1>
+      <p class="subtitle">A little birthday page made just for you.</p>
+      <a class="scroll-cue" href="#memories">SCROLL TO YOUR LITTLE SURPRISE ↓</a>
+    </section>
+
+    <section class="memories" id="memories">
+      
+      <h2>A little photo corner</h2>
+      <p class="section-intro">Two lovely snapshots to make this day a little more special.</p>
+
+      <div class="photo-grid">
+        <figure class="polaroid tilt-left">
+          <img src="ingyin-photo-1.jpeg" alt="Ingyin enjoying a sunset view" loading="lazy">
+          <figcaption>One for the memories ✦</figcaption>
+        </figure>
+        <figure class="polaroid tilt-right">
+          <img src="ingyin-photo-2.jpeg" alt="Ingyin celebrating with a birthday cake" loading="lazy">
+          <figcaption>A little birthday moment ♡</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="wish-section">
+      <div class="wish-card">
+        <p class="eyebrow">A WISH FOR YOUR NEW YEAR</p>
+        <h2>Dear Ingyin,</h2>
+        <p>
+          Hope your birthday is filled with happiness, laughter, and all the
+          little things that make you smile.
+        </p>
+        <p>
+          May your days in Korea bring you new adventures, good friends,
+          success in your studies, and beautiful memories to look back on.
+        </p>
+        <p>
+          Keep being yourself, take care, and enjoy every moment of your
+          special day. Wishing you an amazing year ahead!
+        </p>
+        <p class="signoff">Have the best birthday! ✨</p>
+      </div>
+    </section>
+
+    <section class="final-surprise">
+      <p class="eyebrow">ONE LAST LITTLE THING</p>
+      <button id="giftBtn" class="gift-button" aria-label="Open birthday surprise">🎁</button>
+      <p class="gift-hint">Tap the gift for one more message</p>
+      <div id="surpriseMessage" class="surprise-message hidden" aria-live="polite">
+        <h2>Make a wish! ✨</h2>
+        <p>May this year bring you lots of reasons to smile, wonderful surprises, and happy little moments.</p>
+        
+        <p>Enjoy your day, Ingyin. You deserve a wonderful one! 🤍</p>
+      </div>
+    </section>
+
+    <footer>Made with warm wishes, just for your birthday 🍁</footer>
+    <button id="musicBtn" class="music-button" aria-label="Pause music">♫</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
